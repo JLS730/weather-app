@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(black)), url(./images/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), black), url(./images/background.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+.navigation-bar .input-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.27);
+  border: 2px solid black;
+  height: 60px;
+  width: 1100px;
+  padding: 5px 10px;
+  font-family: 'Lalezar', cursive;
+  color: white;
+}
+
+.navigation-bar .input-fields .dropdown {
+  width: 120px;
+  text-align: center;
+  font-size: 15px;
+  border: 2px solid black;
+}
+
+.navigation-bar .input-fields .input-containers label {
+  font-size: 20px;
+}
+
+.navigation-bar .input-fields .input-containers input {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.navigation-bar .input-fields .state {
+  margin-left: 6px;
+}
+
+.navigation-bar .input-fields .search {
+  text-align: center;
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+.current-weather-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.current-weather-section .current-weather-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  width: 500px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.27);
+  border: 2px solid black;
+  font-family: sans-serif;
+  color: white;
+}
+
+.current-weather-section .current-weather-container .current-weather-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+}
+
+.current-weather-section .current-weather-container .weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+  height: 350px;
+}
+
+.current-weather-section .current-weather-container .weather .weather-image img {
+  height: 250px;
+  width: 250px;
+}
+
+.current-weather-section .current-weather-container .weather .weather-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  width: 150px;
+}
+
+.current-weather-section .current-weather-container .weather .weather-info .day-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70px;
+}
+
+.current-weather-section .current-weather-container .weather .weather-info .day-container h2 {
+  font-size: 35px;
+}
+
+.current-weather-section .current-weather-container .weather .weather-info .temp-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60px;
+}
+
+.current-weather-section .current-weather-container .weather .weather-info .temp-container h4 {
+  font-size: 20px;
+}
+
+.current-weather-section .extra-weather-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  width: 700px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.27);
+  border: 2px solid black;
+  font-family: sans-serif;
+  color: white;
+}
+
+.seven-day-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100vh - 100px - 400px);
+  width: 100%;
+}
+
+.seven-day-section .seven-day-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 350px;
+  width: 1240px;
+  background-color: rgba(255, 255, 255, 0.27);
+  border: 2px solid black;
+  font-family: sans-serif;
+  color: black;
+}
+
+.seven-day-section .seven-day-container .weekday-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid black;
+  height: 300px;
+}
+
+.seven-day-section .seven-day-container .weekday-container .weekday {
+  font-size: 33px;
+}
+
+.seven-day-section .seven-day-container .weekday-container .weekday-image {
+  height: 200px;
+}
+
+.seven-day-section .seven-day-container .weekday-container .weekday-temp-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50px;
+}
+/*# sourceMappingURL=index.css.map */

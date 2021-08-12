@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 1)), url(./images/background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    .input-fields {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.27);
+        border: 2px solid black;
+        height: 60px;
+        width: 1100px;
+        padding: 5px 10px;
+        font-family: 'Lalezar', cursive;
+        color: rgb(255, 255, 255);
+
+        .dropdown {
+            width: 120px;
+            text-align: center;
+            font-size: 15px;
+            border: 2px solid black;
+        }
+
+        .input-containers {
+
+
+            label {
+                font-size: 20px;
+            }
+
+            input {
+                margin-left: 5px;
+                font-size: 15px;
+            }
+        }
+
+        .state {
+            margin-left: 6px;
+        }
+
+        .search {
+            text-align: center;
+            border: 2px solid black;
+            font-size: 15px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.current-weather-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+
+    .current-weather-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        width: 500px;
+        margin-right: 20px;
+        background-color: rgba(255, 255, 255, 0.27);
+        border: 2px solid black;
+        font-family: sans-serif;
+        color: white;
+
+        .current-weather-location {
+            display: flex;
+            align-items: center;
+            height: 90px;
+        }
+
+        .weather {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 450px;
+            height: 350px;
+
+            .weather-image {
+
+                img {
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+
+            .weather-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                height: 200px;
+                width: 150px;
+
+                .day-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 70px;
+
+                    h2 {
+                        font-size: 35px;
+                    }
+                }
+                
+                .temp-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 60px;
+
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .extra-weather-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        width: 700px;
+        margin-left: 20px;
+        background-color: rgba(255, 255, 255, 0.27);
+        border: 2px solid black;
+        font-family: sans-serif;
+        color: white;
+    }
+}
+
+.seven-day-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px - 400px);
+    width: 100%;
+
+    .seven-day-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+        width: 1240px;
+        background-color: rgba(255, 255, 255, 0.27);
+        border: 2px solid black;
+        font-family: sans-serif;
+        color: black;
+
+        .weekday-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid black;
+            height: 300px;
+
+            .weekday {
+                font-size: 33px;
+            }
+
+            .weekday-image {
+                height: 200px;
+            }
+
+            .weekday-temp-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                height: 50px;
+            }
+        }
+    }
+}
